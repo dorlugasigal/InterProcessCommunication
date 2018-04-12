@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
       StreamWriter sw = new StreamWriter(pipeClient);
       try
       {
-        sw.WriteLine(data);
+        sw.WriteLine(Guid.NewGuid());
         sw.Flush();
         pipeClient.Close();
       }
